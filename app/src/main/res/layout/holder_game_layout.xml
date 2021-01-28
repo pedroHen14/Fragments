@@ -31,32 +31,20 @@
             app:layout_constraintTop_toBottomOf="@id/image_game"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             app:layout_constraintStart_toStartOf="parent"
-            android:textColor="@android:color/black"/>
+            android:textColor="@android:color/black"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"/>
 
         <com.google.android.material.chip.ChipGroup
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp"
             android:id="@+id/chip_group_consoles"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@id/text_view_game_name"
             app:layout_constraintStart_toStartOf="parent">
 
-            <com.google.android.material.chip.Chip
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="PC"
-                android:theme="@style/Theme.MaterialComponents.Light"/>
-
-            <com.google.android.material.chip.Chip
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="PS4"
-                android:theme="@style/Theme.MaterialComponents.Light"/>
-
-            <com.google.android.material.chip.Chip
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="XONE"
-                android:theme="@style/Theme.MaterialComponents.Light"/>
+<!--            os chips sao definidos via programação-->
 
         </com.google.android.material.chip.ChipGroup>
 
@@ -65,9 +53,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Tom Clancy's Rainbow Six Siege é um videojogo do género first person shooter produzido pela Ubisoft Montreal."
-            app:layout_constraintTop_toBottomOf="@id/chip_group_consoles"/>
+            app:layout_constraintTop_toBottomOf="@id/chip_group_consoles"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp"/>
 
         <RatingBar
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
             android:id="@+id/rating_bar_game"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -79,15 +71,6 @@
             android:scaleX=".8"
             android:scaleY=".8"
             android:transformPivotX="0dp"/>
-
-        <Button
-            android:id="@+id/button_detail"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Detalhes"
-            style="@style/Widget.AppCompat.Button.Borderless"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
