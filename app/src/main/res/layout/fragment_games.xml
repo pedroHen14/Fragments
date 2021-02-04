@@ -3,13 +3,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.GamesFragment"
-    android:background="#2196F3">
+    tools:context=".fragments.GamesFragment">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view_games"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:listitem="@layout/holder_game_layout"/>
+
+    <ImageButton
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ic_baseline_add_24"
+        android:tint="@android:color/white"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="8dp"
+        android:background="@drawable/rounded_button"/>
 
 </RelativeLayout>
