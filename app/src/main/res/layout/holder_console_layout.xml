@@ -23,7 +23,7 @@
             android:gravity="center"
             android:padding="10dp">
 
-            <ImageView
+            <TextView
                 android:id="@+id/image_console"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -54,16 +54,6 @@
             android:text="Microsoft"
             android:textAppearance="@style/TextAppearance.AppCompat.Small"
             android:textColor="@android:color/black"/>
-
-        <ImageButton
-            android:id="@+id/button_add_consoles"
-            android:layout_marginHorizontal="30dp"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/ic_baseline_add_24"
-            android:tint="@android:color/white"
-            android:background="@drawable/rounded_button"
-            app:layout_constraintEnd_toEndOf="parent"/>
 
         <androidx.cardview.widget.CardView
             android:id="@+id/line_style"

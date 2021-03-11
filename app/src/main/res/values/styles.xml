@@ -14,4 +14,10 @@
         <item name="android:textSize">12sp</item>
     </style>
 
+    <style name="Theme.MaterialComponents.Light"></style>
+
+    <style name="Theme"></style>
+
+    <style name="Theme.MaterialComponents"></style>
+
 </resources>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="36dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <EditText
+        android:id="@+id/edit_nome_console"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Nome"
+        android:layout_marginTop="64dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <EditText
+        android:id="@+id/edit_description_console"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Descrição"
+        app:layout_constraintTop_toBottomOf="@id/edit_nome_console"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"/>
+
+    <EditText
+        android:id="@+id/edit_maker_console"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Desenvolvedor"
+        app:layout_constraintTop_toBottomOf="@id/edit_description_console"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"/>
+
+    <EditText
+        android:id="@+id/image_console"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Imagem console"
+        app:layout_constraintTop_toBottomOf="@id/edit_maker_console"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"/>
+
+    <EditText
+        android:id="@+id/release_date_console"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Data de lançamento"
+        app:layout_constraintTop_toBottomOf="@id/image_console"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"/>
+
+    <Button
+        android:id="@+id/button_salvar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="salvar"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toStartOf="@id/button_cancelar"
+        app:layout_constraintTop_toBottomOf="@id/release_date_console"/>
+
+    <Button
+        android:id="@+id/button_cancelar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="cancelar"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/release_date_console"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
